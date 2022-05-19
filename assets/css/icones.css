@@ -1,0 +1,70 @@
+.icone::before{
+    display: block;
+    content: "";
+    width: 83px;
+    height: 115px;
+    background-color: #004f53;
+    position: absolute;
+    top:-20px;
+    left: -30px;   
+    background-repeat: no-repeat;  
+}
+
+.icone.dica::before{
+    background-image: url(../../assets/objetos/icone_dica.png);
+}
+
+
+.icone.nota::before{
+    background-image: url(../../assets/objetos/icone_nota.png);
+}
+
+
+
+
+
+.icone.praticar::before{
+    background-image: url(../../assets/objetos/ico-praticar-b.png);
+}
+
+.icone.pergunta::before{
+    background-image: url(../../assets/objetos/icone_pergunta.png);
+}
+
+
+.icone.refletir::before{
+    background-image: url(../../assets/objetos/ico-refletir-b.png);
+}
+
+.icone.saiba-mais::before{
+    background-image: url(../../assets/objetos/ico-saiba-b.png);
+}
+
+.icone.atencao::before{
+    background-image: url(../../assets/objetos/ico-atencao-b.png);
+}
+.icone.juridico::before{
+    background-image: url(../../assets/objetos/icone-constituicao-branco.png);
+}
+.icone.juridico::before {
+    width: 104px;
+    height: 131px;
+    top: -20px;
+    left: -50px;
+    
+}
+.icone.cinema::before{
+    background-image: url(../../assets/objetos/icone-cinema.png);
+}
+.icone.importante::before{
+    background-image: url(../../assets/objetos/icone_importante.png);
+}
+.icone.importante::before {
+    width: 96px;    
+    left: -45px;
+}
+@media print{
+    .icone::before{
+        display:none !important
+    }
+}

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Template</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="../../assets/css/preloader.css">
+    <link rel="stylesheet" href="../../assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/animate.min.css" />
+    <link rel="stylesheet" href="../../assets/fa/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/css/template.css">
+
+    <link rel="stylesheet" href="../../assets/print/print.css">
+   
+
+  </head>
+  <body class="bg-sesc escuro">
+    <div class="preloader">
+        <div class="anim"></div>
+        <h1>Aguarde enquanto o conteúdo é carregado.</h1>
+    </div>
+    <!-- MARCA D´ÁGUA -->
+    <img src="../../assets/img/logo_sesc_horizontal.svg" id="marcadaguaLogo">
+
+    <header id="topo" class="sesc no-print">
+        <img src="../../assets/img/cabecalho/cabecalho.png" class="d-none d-lg-block img-fluid" alt="">        
+    </header>
+    <!-- Section principal deve ter o booklet, pois faz parte do print.js -->    
+    <section id="booklet">
+        <!--Dentro do section devemos ter um elemento com a classe paginas, para funcionar a paginação/print-->
+        <header class="titulo-conteudo mb-0 print">
+            <div class="container" style="padding-top:1px">
+                <!--titulo do curso para o print e leitor de tela-->
+                <h1 id="nome-curso" class="d-none print mt-0 text-center w-100">Matemática</h1>
+                <div class="row g-0 pb-4 pt-4">
+                    <div class="col-9 d-flex flex-column justify-content-center align-items-start">                      
+                        <h2>Título do conteúdo</h2>
+                    </div>
+                    <div class="col-3 d-flex flex-column justify-content-center align-items-end">
+                        <button data-pdf="true" name="button" class="bt-print bto-imprimir no-print"><i class="fas fa-print "></i> imprimir</button>                            
+                    </div>                                       
+                </div>
+            </div>         
+        </header>
+        <section class="paginas">
+            <div class="container pagina">
+                <p>Inserir o conteúdo aqui</p>
+            </div>
+        </section>
+        <!-- Paginação do print-->
+        <footer class="text-center no-print container">
+            <ul class="pagination">
+
+            </ul>
+        </footer>   
+    </section>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="../../assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <!--Jquery-->
+    <script src="../../assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- print legado dos técnicos -->
+    <!-- descomentar essa linha caso queira um print.css e um leitor.css exclusivo para o conteudo ao usar o botao imprimir-->
+    <!--
+    <script>
+        var custom_print_path = 'assets/css/';
+        var custom_leitor_path = 'assets/css/';
+    </script>    
+    -->   
+    <script src="../../assets/print/print.js"></script>
+    <script src="../../assets/print/template.config.js"></script>
+
+    <script src="../../assets/js/audio-player.js"></script>
+    <script src="../../assets/interativos/esquema_bru/esquema-bru.js"></script>
+    <script src="../../assets/js/geral.js"></script>
+
+ <!-- Versao atual do handtalk -->
+    <script>
+        var scriptElem=document.createElement("script");
+        scriptElem.src="https://plugin.handtalk.me/web/latest/handtalk.min.js",
+        scriptElem.charset="UTF-8",
+        scriptElem.onload=function(){
+            window.ht = new HT({
+                token:"bf5b7efb148a829a126a0e0c9fd533bf",
+                align:"top",
+                videoEnabled: true,
+                ytEmbedReplace: true,           
+                mobileConfig:{align:"right",
+                                actionsAlign:"top",
+                                customButtonStyle:{
+                                    borderRadius:"6px",
+                                    size:"38px",
+                                    horizontalMargin:"13px",
+                                    bottomMargin:"140px",
+                                    rightMargin:"40px"}
+                                }
+                });        
+            $('.ht-skip').attr("aria-hidden","true")
+        },
+    document.body.appendChild(scriptElem);
+    
+    </script>
+</body>
+</html>
