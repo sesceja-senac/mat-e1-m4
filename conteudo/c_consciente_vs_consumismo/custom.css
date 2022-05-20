@@ -1,0 +1,114 @@
+header.sesc{
+    background-image: url(../../assets/img/cabecalho/matematica1920.png);
+    background-position: center center;   
+    background-size: 1920px 122px;
+    height: 122px;    
+}
+
+.titulo-conteudo {
+    position: absolute;
+    top: 128px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 102px;
+    display: block;
+    z-index: 5
+  }
+  .intro h2 {
+    font-size: 54px;
+    display: block;
+    line-height:120%
+  }
+  .intro h2 strong{
+      display: inline-block;
+      background-color: #ff9700;
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+  .intro p {
+      display: block;
+  }
+  .tablet{
+      background: url(../../assets/objetos/misc/slideshow_tablet_fundo.png) top left / 100% auto no-repeat;
+      width: 801px;
+      height: 551px;
+      display: block;
+      padding: 40px 89px;
+      margin-left: auto;
+      margin-right: auto;
+      
+  }
+  .tablet .carousel-control-prev-icon,
+  .tablet .carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    outline: black;
+    background-size: 100%, 100%;
+    background-image: none;
+    color: #3f3f3f
+  }
+  .tablet .carousel-control-prev-icon {
+    left: -28px;
+    position: relative;
+  }
+  .tablet .carousel-control-next-icon {
+    right: -28px;
+    position: relative;
+  }
+  .modal .modal-body {
+    color: #3f3f3f !important;
+  }
+  .bto-modal {
+      border: 0px none;
+      background: none;
+      width: 205px;
+      height: 144px;
+      display: block;;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .bto-modal1 {
+      background: url(../../assets/objetos/misc/bot1.png) top left / 100% auto no-repeat;
+  }
+  .bto-modal2 {
+      background: url(../../assets/objetos/misc/bot2.png) top left / 100% auto no-repeat;
+  }
+  .bto-modal1:hover {
+      background: url(../../assets/objetos/misc/bot1_hover.png) top left / 100% auto no-repeat;
+  }
+  .bto-modal2:hover {
+      background: url(../../assets/objetos/misc/bot2_hover.png) top left / 100% auto no-repeat;
+  }
+
+/*iphones 5 pra baixo da vida*/
+@media only screen and (max-width: 1280px) and (min-width:321px){
+
+    header.sesc {
+        background-image: url(../../assets/img/cabecalho/matematica.png);
+        background-size: auto 100% !important;  
+        background-position: center top;
+        width: 100%;
+        height: auto;
+        padding-top: 10%;
+    }
+
+}
+@media screen and (max-width:991px) {
+
+
+}
+@media screen and (max-width:320px) {
+    
+    header.sesc {
+        background-image: url(../../assets/img/cabecalho/matematica.png);
+        background-size: auto 100% !important;  
+        background-position: center top !important;
+        width: 100%;
+        height: auto;
+        padding-top: 20%;
+    }
+}
+
