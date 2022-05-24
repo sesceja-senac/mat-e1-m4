@@ -37,8 +37,7 @@ html,body{
 
 .main-title{    
     color: white;
-    padding: 40px 20px; 
-    margin-top: 20px;
+    margin-top: 4.5vh;
     margin-bottom: 40px;  
 }
 .main-title img{
@@ -126,7 +125,7 @@ a.bt-nav:hover{
     }
     .main-title{
         padding:0;
-        margin-top: 30px;
+        margin-top: 40px;
         margin-bottom: 20px;
     }
 
@@ -170,6 +169,11 @@ a.bt-nav:hover{
     .bt-nav:nth-child(odd){     
         margin-top: -24%;
         vertical-align: text-top;
+    }
+    .main-title{
+        padding:0;
+        margin-top: 20px;
+        margin-bottom: 30px;       
     }
 }
 @media screen and (max-width:1024px) and (orientation:landscape){   
