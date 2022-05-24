@@ -1,0 +1,261 @@
+html,body{
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+}
+.row{
+    margin: 0;
+}
+.bg-inicial{
+    background-image: url(../objetos/capa/capa_bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.main-nav{
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 18vh;  
+    position: relative; 
+    background-image: url(../objetos/capa/capa_barra_vz.png);
+    background-size: 100% 100%;
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 50px;
+}
+
+
+.barra .bg02{
+    background-image: url(../objetos/capa/barra/barra_bg02.png);
+    background-size: 100% 100%;
+    background-position: top;
+}
+
+
+.main-title{    
+    color: white;
+    padding: 40px 20px; 
+    margin-top: 20px;
+    margin-bottom: 40px;  
+}
+.main-title img{
+    margin-left: -5%;
+}
+
+
+a.bt-nav{  
+    display: inline-block;
+    width: 14vw;
+    height: Calc(14vw * 19/28.1); 
+    background-size: contain;  
+    background-repeat: no-repeat;
+}
+a.bt-nav:hover{
+    transform: scale(1.1);
+}
+
+.bt-nav:nth-child(even){
+    margin-left: 0;
+    vertical-align: text-bottom;
+}
+.bt-nav:nth-child(odd){
+    margin-top: -18%;
+    vertical-align: text-top;
+}
+.bt01{
+    background-image: url(../objetos/capa/capa_bot1.png);  
+}
+.bt01:hover{
+    background-image: url(../objetos/capa/capa_bot1_hover.png);
+}
+
+.bt02{
+    background-image: url(../objetos/capa/capa_bot2.png);
+}
+.bt02:hover{
+    background-image: url(../objetos/capa/capa_bot2_hover.png);
+}
+
+.bt03{
+    background-image: url(../objetos/capa/capa_bot3.png);    
+}
+.bt03:hover{
+    background-image: url(../objetos/capa/capa_bot3_hover.png);  
+}
+.bt04{
+    background-image: url(../objetos/capa/capa_bot4.png);    
+}
+.bt04:hover{
+    background-image: url(../objetos/capa/capa_bot4_hover.png);
+}
+
+.bt05{
+    background-image: url(../objetos/capa/capa_bot5.png);   
+}
+.bt05:hover{
+    background-image: url(../objetos/capa/capa_bot5_hover.png);
+}
+
+.bt06{
+    background-image: url(../objetos/capa/capa_bot6.png);   
+}
+.bt06:hover{
+    background-image: url(../objetos/capa/capa_bot6_hover.png);
+}
+
+
+.img-main{
+    max-width: 45vw
+}
+
+@media screen and (max-width:1366px){
+    .img-main{
+        max-width: 44vw;
+        margin-left: 0;
+    }
+
+    .bt-nav:nth-child(even){ 
+        vertical-align: text-bottom;
+    }
+    .bt-nav:nth-child(odd){     
+        margin-top: -18%;
+        vertical-align: text-top;
+    }
+    .main-title{
+        padding:0;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+}
+@media screen and (max-width:1366px) and (max-height:770px){
+    .main-title{        
+        margin-bottom: 40px;
+    }
+    .bt-nav:nth-child(odd){     
+        margin-top: -12%;
+        vertical-align: text-top;
+    }
+    .img-main{
+        max-width: 50vw;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:1366px) and (max-height:660px){
+    .img-main{
+        max-width: 44vw;
+        margin-left: 0;
+    }
+    .main-title{
+        padding:0;
+        margin-top: 30px;
+        margin-bottom: 30px;       
+    }
+    .main-title img{
+        max-width: 380px;
+    }
+    .bt-nav:nth-child(odd){     
+        margin-top: -20%;
+        vertical-align: text-top;
+    }
+}
+@media screen and (max-width:1366px) and (max-height:590px){
+    .img-main{
+        max-width: 40vw;
+        margin-left: 0;
+    }
+    .bt-nav:nth-child(odd){     
+        margin-top: -24%;
+        vertical-align: text-top;
+    }
+}
+@media screen and (max-width:1024px) and (orientation:landscape){   
+    a.bt-nav{ 
+        width: 16vw;
+        height: Calc(16vw * 19/28.1);       
+          
+    }
+    .bt-nav:nth-child(even){ 
+        vertical-align: initial;
+        float: left;
+        margin-top: -20px;
+    }
+    .bt-nav:nth-child(odd){     
+        margin-top: initial;
+        vertical-align:initial;
+        float: right;
+        margin-top: -30px;
+    }
+    .img-main{
+        max-width: 60vw;
+        margin-left: 0 
+    ;}
+    .main-title{
+        padding:0;
+        margin-top: 50px;
+        margin-bottom: 80px;
+    }
+   
+}
+
+@media screen and (max-width:994px){
+    .bg-inicial{     
+        background-position: left;
+        margin: 0;
+    }
+    .bg-inicial .h-100{
+        height: auto !important;
+    }
+    .img-main{
+        max-width: 80vw;
+        margin-left: auto;
+    }
+
+    a.bt-nav{ 
+        width: 40vw;
+        height: Calc(40vw * 19/28.1); 
+    }
+    .main-title{
+        padding:0;
+        margin-top: 12px;
+        margin-bottom: 20px;       
+    }
+    .main-title img{
+        max-width: 80vw;
+        display: block;
+        margin: 0 auto;
+    }
+    .bt-nav:nth-child(even){   
+        float: none;  
+        margin-top:initial;
+        vertical-align: initial;
+    }
+    .bt-nav:nth-child(odd){   
+        float: none;    
+        margin-top:initial;
+        vertical-align: initial;
+    }
+    .barra{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .bg02{
+        border-radius: 10px;        
+    }
+
+    html,body{
+        overflow-y: auto;
+        background-image: url(../objetos/capa/capa_bg.jpg);
+        background-size: cover;
+        background-position: left center;
+        background-attachment: fixed;       
+    }
+    .bg-inicial{
+        background: none;
+    }
+}
