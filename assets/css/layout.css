@@ -796,3 +796,88 @@ h3, .subtitulo{
     padding-left: 15px;
     padding-right: 15px;
   }
+
+  #parallax1, 
+  #parallax2,
+  #parallax3,
+  #parallax4,
+  #parallax5
+  {
+
+    position: absolute;
+
+  }
+
+  #parallax1 {
+      left: 30px;
+      top: 0px;
+  }
+
+  #parallax2 {
+      right: 30px;
+      top: 0px;
+  }
+  #parallax3 {
+      left:30px;
+      top: 0px;
+  }
+
+  #parallax4 {
+      right: 30px;
+      top: 0px;
+  }
+
+  #parallax5 {
+      left: 30px;
+      top: 0px;
+  }
+  
+
+  @media only screen and (max-width: 1400px){
+      .parallax {
+          width: 300px !important;
+          
+
+      }
+      #parallax1 {
+          left: 30px !important;
+         
+      }
+      #parallax2 {
+          right: 30px !important;
+          width: 200px !important;
+      }
+      #parallax3 {
+          left: 30px !important;
+         
+      }
+      #parallax4 {
+          right: 30px !important;
+          width: 200px !important;
+      }
+      #parallax5 {
+          left: 30px !important;
+          width: 200px !important;
+      }
+      
+  }
+  @media only screen and (max-width: 1279px){
+      .parallax {
+          display: none !important
+      }
+  }
+
+  .bto-navegacao {
+    border: 2px solid #fff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    color: white;
+    text-decoration: none;
+  }
+
+  .bto-navegacao:hover {
+      background-color: white;
+      color:#004E52;
+  }
