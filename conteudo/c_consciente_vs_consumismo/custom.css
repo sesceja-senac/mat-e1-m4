@@ -112,6 +112,12 @@ header.sesc{
     word-break: break-all;
 }
 
+@media screen and (max-width:1366px){
+    .realocar-img{
+        margin-left: -10vw;
+    }
+}
+
 /*iphones 5 pra baixo da vida*/
 @media only screen and (max-width: 1280px) and (min-width:321px){
 

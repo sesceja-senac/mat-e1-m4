@@ -213,7 +213,7 @@
                     <div class="container">
                         <p>Veja, no vídeo a seguir, um exemplo: </p><br>
                     <iframe class="youtube-pl no-print" aria-hidden="true" width="560" height="315"
-                        src="https://www.youtube.com/embed/4sQJSYDAYIE?modestbranding=1" title="YouTube video player"
+                        src="https://www.youtube.com/embed/IyF1dbe_g2I?modestbranding=1" title="YouTube video player"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
@@ -274,7 +274,7 @@
             </div>
 
             <div class="pagina">
-                <div class="position-relative tudoInternas animate__animated">
+                <div class="position-relative tudoInternas animate__animated realocar-img">
                     <img src="../../assets/objetos/misc/parallax5.png" class="parallax" id="parallax1" alt="" data-enllax-ratio=".1" data-enllax-type="foreground" style="z-index:99">
                 </div>
                 <div class="position-relative tudoInternas animate__animated">
@@ -377,7 +377,7 @@
                     <p>Veja, no vídeo a seguir, um exemplo: </p>
 
                     <iframe class="youtube-pl no-print" aria-hidden="true" width="560" height="315"
-                        src="https://www.youtube.com/embed/O4ac1VqvcAc?modestbranding=1" title="YouTube video player"
+                        src="https://www.youtube.com/embed/y7WjeOEfLOE?modestbranding=1" title="YouTube video player"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
@@ -475,7 +475,7 @@
 
 
                     <iframe class="youtube-pl no-print" aria-hidden="true" width="560" height="315"
-                        src="https://www.youtube.com/embed/QaaP7FrG_Rs?modestbranding=1" title="YouTube video player"
+                        src="https://www.youtube.com/embed/GDBgVVm2b1c?modestbranding=1" title="YouTube video player"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
@@ -651,7 +651,10 @@
                         sociais em relação ao total de habitantes. Veja como: </p>
                     <br>
                     <figure aria-hidden="true" class="text-center mt-5 mb-5">
-                        <img src="../../assets/objetos/misc/GIF1.gif" alt="" class="img-fluid">
+                        <img src="../../assets/objetos/misc/GIF1.gif" alt="" class="img-fluid no-print">
+                        <div class="visually-hidden print text-center" aria-hidden="true">
+                            <img src="../../assets/objetos/misc/gif1_print.png" alt="" class="img-fluid">
+                        </div>
                     </figure>
                     <br>
                     <p>O resultado desse cálculo é um decimal <strong>exato</strong>, um número que tem casas decimais
@@ -949,8 +952,10 @@
                         sua família, formando um círculo vicioso. </p>
                     <br>
                     <figure aria-hidden="true" class="text-center mt-5 mb-5">
-                        <img src="../../assets/objetos/misc/GIF2.gif" alt="" class="img-fluid">
-
+                        <img src="../../assets/objetos/misc/GIF2.gif" alt="" class="img-fluid no-print">
+                        <div class="visually-hidden print text-center" aria-hidden="true">
+                            <img src="../../assets/objetos/misc/gif2_print.png" alt="" class="img-fluid">
+                        </div>
                     </figure>
                     <div class="visually-hidden"> Mas e como mudar esse cenário?
                         Como fazer a sua parte para que essa engrenagem do consumismo pare de girar?
@@ -1020,7 +1025,7 @@
             <div class="pagina">
                 <div class="container">
                     <h2 class="mt-5 mb-5">Exercícios</h2>
-                    <div class="mt-5 mb-5 caixa icone saiba-mais">
+                    <div class="mt-5 mb-5 caixa icone praticar">
                         <h3 class="visually-hidden print">Vamos praticar!</h3>
                         <p class="clique"><strong class="text-black"><strong>Clique</strong> ou <strong>toque</strong>
                                 na resposta desejada para responder
@@ -1251,6 +1256,11 @@
     </script>
     <script>
        $('.parallax').addClass('no-print')
+
+        //a classe animate__animated altera o comportamento de uma modal, remover do container pai antes de mostrar a modal
+       $('#grandeza_d_prop, #grandeza_i_prop').on('show.bs.modal', function(){
+           $(this).parent().removeClass('animate__animated')
+       })
     </script>
 </body>
 
