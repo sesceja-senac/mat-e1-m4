@@ -73,7 +73,9 @@
                             </div>
                             <div class="col-12 col-md-6">
                                 <img src="../../assets/objetos/misc/img_intro.png" alt=""
-                                    class="img-intro animate__animated">
+                                    class="img-intro animate__animated d-none d-lg-block">
+                                <img src="../../assets/objetos/misc/img_intro.png" alt=""
+                                    class="img-intro animate__animated img-fluid d-block d-lg-none">
                             </div>
                         </div>
                     </div>
@@ -117,11 +119,13 @@
                     <div class="position-relative">
                         <img src="../../assets/objetos/misc/parallax3.png" class="parallax" id="parallax3" alt="" data-enllax-ratio=".3" data-enllax-type="foreground" style="z-index:99">
                     </div>
-                    
+
+
+             
                    <div class="container">
                     <!-- Slideshow tablet -->
                     <p><strong>Clique</strong> ou <strong>toque</strong> nas setas para visualizar o conteúdo. </p>
-                    <div class="only-print mt-5 mb-5">
+                    <div class="only-print mt-5 mb-5 text-center">
                         <img src="../../assets/objetos/misc/slideshow_tablet_1.png" class="img-fluid mb-3"
                                     alt="...">
                         <img src="../../assets/objetos/misc/slideshow_tablet_2.png" class="img-fluid mb-3"
@@ -129,20 +133,18 @@
                         <img src="../../assets/objetos/misc/slideshow_tablet_3.png" class="img-fluid mb-3"
                                     alt="...">
                     </div>
-                    <div id="carouselExampleControls" class="carousel slide d-block d-md-none" data-bs-ride="carousel"
-                            data-interval="false">
+                    <div id="carouselExampleControls" class="carousel slide d-block d-md-none nao-imprimir no-print mb-4" data-bs-ride="carousel"
+                            data-bs-interval="false">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="../../assets/objetos/misc/slideshow_tablet_1.png" class="d-block w-100"
-                                        alt="...">
+                                    <a href="../../assets/objetos/misc/slideshow_tablet_1.png" target="_blank"><img src="../../assets/objetos/misc/slideshow_tablet_1.png" class="d-block w-100"  alt="..."></a>
+                                      
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="../../assets/objetos/misc/slideshow_tablet_2.png" class="d-block w-100"
-                                        alt="...">
+                                    <a href="../../assets/objetos/misc/slideshow_tablet_2.png" target="_blank"><img src="../../assets/objetos/misc/slideshow_tablet_2.png" class="d-block w-100" alt="..."></a>
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="../../assets/objetos/misc/slideshow_tablet_3.png" class="d-block w-100"
-                                        alt="...">
+                                    <a href="../../assets/objetos/misc/slideshow_tablet_3.png"><img src="../../assets/objetos/misc/slideshow_tablet_3.png" class="d-block w-100" alt="..."></a>
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button"
@@ -157,11 +159,16 @@
                                         class="fas fa-2x fa-angle-right"></i></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
+                            <ol class="carousel-indicators">
+                                <li data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active"></li>
+                                <li data-bs-target="#carouselExampleControls" data-bs-slide-to="1"></li>
+                                <li data-bs-target="#carouselExampleControls" data-bs-slide-to="2"></li>
+                            </ol>
                         </div>
                     <div class="tablet mt-5 mb-5 d-none d-md-block">
                         
-                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"
-                            data-interval="false">
+                        <div id="carouselExampleControls2" class="carousel slide nao-imprimir no-print" data-bs-ride="carousel"
+                            data-bs-interval="false">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img src="../../assets/objetos/misc/slideshow_tablet_1.png" class="d-block w-100"
@@ -177,17 +184,22 @@
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"><i
                                         class="fas fa-2x fa-angle-left"></i></span>
                                 <span class="visually-hidden">Previous</span>
                             </button>
                             <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                data-bs-target="#carouselExampleControls2" data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"><i
                                         class="fas fa-2x fa-angle-right"></i></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
+                            <ol class="carousel-indicators">
+                                <li data-bs-target="#carouselExampleControls2" data-bs-slide-to="0" class="active"></li>
+                                <li data-bs-target="#carouselExampleControls2" data-bs-slide-to="1"></li>
+                                <li data-bs-target="#carouselExampleControls2" data-bs-slide-to="2"></li>
+                            </ol>
                         </div>
                     </div>
                     <!-- Slideshow tablet -->
@@ -207,7 +219,8 @@
                         allowfullscreen></iframe>
                     <br>
                   
-                    <div class="visually-hidden">
+                    <div class="visually-hidden print">
+                        <h5>Transcrição do vídeo</h5>
                         <p>A empresa paga R$ 1,00 por produto finalizado e os trabalhadores levam em torno de 40 min
                             para entregar um item pronto. Ao final de 14 horas, quanto esse funcionário terá para
                             receber? </p>
@@ -246,7 +259,7 @@
                             quinhentos e noventa e oito reais) </p>
                     </div>
                     <nav class="mt-5 mb-5">
-                        <div class="row">
+                        <div class="row pb-4 no-print">
                             <div class="col-12 col-md-6">
                              <!-- <a href="index.html?page=4" class="bto-navegacao"><i class="fas fa-angle-left    "></i> Voltar</a> -->
                             </div>
@@ -369,12 +382,41 @@
                         allowfullscreen></iframe>
                     <br>
 
-                    <div class="visually-hidden">
+                    <div class="visually-hidden print">
+                        <h5>Transcrição do vídeo</h5>
                         <p>Uma fábrica de calçados com 7 funcionários produz 76 peças em 1 dia, para produzir uma
                             encomenda de 152 peças, quantos funcionários serão necessários? </p>
                         <p>São encontradas, nesse problema, duas grandezas envolvidas: a quantidade (peças produzidas) e
                             o tempo (dias de produção). Organizando os dados em tabela, temos: </p>
-                        <p>Tabela com duas colunas e três linhas, na primeira coluna e linha, está escrito “número de
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p>Número de funcionários</p>
+                                        </td>
+                                        <td>
+                                            <p>Quantidade de peças</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>7</p>
+                                        </td>
+                                        <td>
+                                            <p>76</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>X</p>
+                                        </td>
+                                        <td>
+                                            <p>152</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        <p class="no-print">Tabela com duas colunas e três linhas, na primeira coluna e linha, está escrito “número de
                             funcionários”, na segunda coluna e primeira, linha está escrito “quantidade de peças”. Na
                             segunda linha da primeira coluna, há o número sete, na segunda coluna, há o número 76. Na
                             terceira linha da primeira coluna, há um xis, e na terceira linha da segunda coluna, o
@@ -386,7 +428,35 @@
                         <p>E como resolver esse cálculo? Primeiramente, sinalize no problema que as duas grandezas
                             crescem na mesma proporção. Use setas para a mesma direção, apontadas para cima ou para
                             baixo. </p>
-                        <p>Tabela com duas colunas e três linhas. Na primeira coluna e linha, está escrito “número de
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p>Número de funcionários</p>
+                                        </td>
+                                        <td>
+                                            <p>Quantidade de peças</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>7 ↓ </p>
+                                        </td>
+                                        <td>
+                                            <p>76 ↓ </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>X ↓ </p>
+                                        </td>
+                                        <td>
+                                            <p>152 ↓ </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        <p class="no-print">Tabela com duas colunas e três linhas. Na primeira coluna e linha, está escrito “número de
                             funcionários”, na segunda coluna e primeira linha, está escrito “quantidade de peças”. Na
                             segunda linha da primeira coluna, há o número sete com uma seta indicando para baixo, na
                             segunda coluna, há o número 76 com uma seta indicando para baixo. Na terceira linha da
@@ -410,7 +480,8 @@
                         allowfullscreen></iframe>
                     <br>
 
-                    <div class="visually-hidden">
+                    <div class="visually-hidden print">
+                        <h5>Transcrição do vídeo</h5>
                         <p>Uma empresa tem uma equipe com três funcionários para fazer a limpeza dos ônibus, os
                             funcionários levam seis dias para executar todo o serviço. Com a necessidade de que o
                             serviço seja feito mais rapidamente, a empresa resolve contratar mais três funcionários. Com
@@ -421,16 +492,70 @@
                             Sendo assim, nesse exemplo, há grandezas inversamente proporcionais, se uma das grandezas
                             aumenta, a outra diminui proporcionalmente. </p>
                         <p>Veja os dados organizados. </p>
-                        <p>Funcionários </p>
-                        <p>Tabela com duas colunas e três linhas. Na primeira coluna e linha, está escrito
+                       
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p>Funcionários</p>
+                                    </td>
+                                    <td>
+                                        <p>Dias</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>3</p>
+                                    </td>
+                                    <td>
+                                        <p>6</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>6</p>
+                                    </td>
+                                    <td>
+                                        <p>X</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p class="no-print">Tabela com duas colunas e três linhas. Na primeira coluna e linha, está escrito
                             “funcionários”, na segunda coluna e primeira linha, está escrito “dias”. Na segunda linha da
                             primeira coluna, há o número três, na segunda coluna, há o número seis. Na terceira linha da
                             primeira coluna, há o número seis, e na terceira linha da segunda coluna, há um xis. </p>
                         <p>Já que as grandezas são inversamente proporcionais, as setas serão colocadas em sentidos
                             opostos, indicando essa proporcionalidade inversa. </p>
-                        <p>Funcionários </p>
-                        <p>Dias </p>
-                        <p>Tabela com duas colunas e três linhas, na primeira coluna e linha, está escrito
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p>Funcionários</p>
+                                        </td>
+                                        <td>
+                                            <p>Dias</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>3 ↓</p>
+                                        </td>
+                                        <td>
+                                            <p>6 ↑</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>6 ↓</p>
+                                        </td>
+                                        <td>
+                                            <p>X ↑</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        <p class="no-print">Tabela com duas colunas e três linhas, na primeira coluna e linha, está escrito
                             “funcionários”, na segunda coluna e primeira linha, está escrito “dias”. Na segunda linha da
                             primeira coluna, há o número três com uma seta apontada para baixo, na segunda coluna, há o
                             número seis com uma seta apontada para baixo. Na terceira linha da primeira coluna, há o
@@ -449,7 +574,7 @@
                         <p>Para realizar o serviço, seis funcionários precisarão de três dias. </p>
                     </div>
                     <nav class="mt-5 mb-5">
-                        <div class="row">
+                        <div class="row pb-4 no-print">
                             <div class="col-12 col-md-6">
                              <a href="index.html?page=1" class="bto-navegacao"><i class="fas fa-angle-left    "></i> Voltar</a>
                             </div>
@@ -693,7 +818,7 @@
                     </div>
                    
                     <nav class="mt-5 mb-5">
-                        <div class="row">
+                        <div class="row pb-4 no-print">
                             <div class="col-12 col-md-6">
                              <a href="index.html?page=2" class="bto-navegacao"><i class="fas fa-angle-left    "></i> Voltar</a>
                             </div>
@@ -767,7 +892,7 @@
                    
                     <figure aria-hidden="true" class="text-center mt-5 mb-5">
                         <img src="../../assets/objetos/misc/infografico_3.png" alt=""
-                            class="img-fluid d-none d-md-inline-block">
+                            class="img-fluid d-block mx-auto my-2 my-lg-0 d-md-inline-block">
 
                     </figure>
                     <div class="visually-hidden">
@@ -868,7 +993,7 @@
                         você precisa de tal produto para se sentir incluído na sociedade.</p>
 
                         <nav class="mt-5 mb-5">
-                            <div class="row">
+                            <div class="row pb-4 no-print">
                                 <div class="col-12 col-md-6">
                                  <a href="index.html?page=3" class="bto-navegacao"><i class="fas fa-angle-left    "></i> Voltar</a>
                                 </div>
@@ -979,7 +1104,7 @@
                         </div>
                     </div>
                     <nav class="mt-5 mb-5">
-                        <div class="row">
+                        <div class="row pb-4 no-print">
                             <div class="col-12 col-md-6">
                              <a href="index.html?page=4" class="bto-navegacao"><i class="fas fa-angle-left    "></i> Voltar</a>
                             </div>
@@ -998,28 +1123,28 @@
                         https://blog.racon.com.br/dicas-para-evitar-compras-por-impulso-e-salvar-seu-planejamento/#9-definir-um-or-amento-para-compras-diversas.
                         Acesso em: 5 abr. 2022. </p>
                     <p>GRANDCHAMP, Leonardo. Brasil é o 3.º país que mais usa redes sociais no mundo todo! <strong>Rede Jornal Contábil</strong>, 1.º out. 2021. Disponível em:
-                        https://www.jornalcontabil.com.br/brasil-e-o-3o-pais-que-mais-usa-redes-sociais-no-mundo-todo/#:~:text=O%20Brasil%20%C3%A9%20o%203%C2%BA,horas%20e%2045%20minutos%2C%20respectivamente.
+                        <span class="breaker">https://www.jornalcontabil.com.br/brasil-e-o-3o-pais-que-mais-usa-redes-sociais-no-mundo-todo/#:~:text=O%20Brasil%20%C3%A9%20o%203%C2%BA,horas%20e%2045%20minutos%2C%20respectivamente</span>.
                         Acesso em: 5 abr. 2022. </p>
                     <p>SILVA, Ana Beatriz B.<strong> Mentes consumistas</strong>: do consumismo à compulsão por compras. São Paulo:
                         Globo, 2014. </p>
                     <p>SOCIAL Media Trends. <strong>Rock Content</strong>, 2019. Disponível em:
-                        https://materiais.rockcontent.com/social-media-trends. Acesso em: 5 abr. 2022. </p>
+                        <span class="breaker">https://materiais.rockcontent.com/social-media-trends</span>. Acesso em: 5 abr. 2022. </p>
                     <p>SUA empresa tem que estar nas redes sociais? <strong>Blog Comunicarte</strong>, 31 maio 2019. Disponível em:
-                        https://www.conteudoinboundmarketing.com.br/empresa-nas-redes-sociais/. Acesso em: 5 abr. 2022.
+                        <span class="breaker">https://www.conteudoinboundmarketing.com.br/empresa-nas-redes-sociais/</span>. Acesso em: 5 abr. 2022.
                     </p>
                     <p>TANJI, Thiago. Escravos da moda: os bastidores nada bonitos da indústria fashion. <strong>Revista Galileu</strong>, 2016. Disponível em:
-                        https://revistagalileu.globo.com/Revista/noticia/2016/06/escravos-da-moda-os-bastidores-nada-bonitos-da-industria-fashion.html.
+                        <span class="breaker">https://revistagalileu.globo.com/Revista/noticia/2016/06/escravos-da-moda-os-bastidores-nada-bonitos-da-industria-fashion.html</span>.
                         Acesso em: 5 abr. 2022. </p>
                     <p>UNIVERSIDADE FEDERAL DA PARAÍBA. <strong>I Olimpíada Brasileira de Educação Financeira</strong>, 2019. Nível 2,
                         Fase 3. Disponível em:
-                        https://www.ufpb.br/educacaofinanceira/contents/documentos/obef/provas-e-gabaritos/revisada-fase-3-prova-n2-i-obef.pdf.
+                        <span class="breaker">https://www.ufpb.br/educacaofinanceira/contents/documentos/obef/provas-e-gabaritos/revisada-fase-3-prova-n2-i-obef.pdf</span>.
                         Acesso em: 10 maio 2022. </p>
                     <p>WERZBITZKI, João Bruno. Como os novos comportamentos de consumo influenciam nas redes sociais.
                         <strong>E-commercebrasil</strong>, 12 ago. 2021. Disponível em:
-                        https://www.ecommercebrasil.com.br/artigos/como-os-novos-comportamentos-de-consumo-influenciam-nas-redes-sociais.
+                        <span class="breaker">https://www.ecommercebrasil.com.br/artigos/como-os-novos-comportamentos-de-consumo-influenciam-nas-redes-sociais</span>.
                         Acesso em: 5 abr. 2022. </p>
                 <nav class="mt-5 mb-5">
-                   <div class="row">
+                   <div class="row pb-4 no-print">
                        <div class="col-12 col-md-6">
                         <a href="index.html?page=5" class="bto-navegacao"><i class="fas fa-angle-left    "></i> Voltar</a>
                        </div>
@@ -1104,9 +1229,7 @@
             document.body.appendChild(scriptElem);
     </script>
     <script>
-        $(function () {
-
-        });
+       $('.parallax').addClass('no-print')
     </script>
 </body>
 

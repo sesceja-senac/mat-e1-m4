@@ -59,6 +59,27 @@ header.sesc{
     right: -18px;
     position: relative;
   }
+
+  #carouselExampleControls2 .carousel-indicators{
+      bottom: 0;
+      margin-bottom: -5px !important;
+  }
+  #carouselExampleControls .carousel-indicators{
+    bottom: 0;
+    margin-bottom: -25px !important;
+    background-color: #FAFBFB;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #carouselExampleControls .carousel-indicators li,
+  #carouselExampleControls2 .carousel-indicators li{
+      background-color: #0c0c0c;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+  }
+
+
   .modal .modal-body {
     color: #3f3f3f !important;
   }
@@ -86,6 +107,11 @@ header.sesc{
       background: url(../../assets/objetos/misc/bot2_hover.png) top left / 100% auto no-repeat;
   }
 
+
+.breaker{
+    word-break: break-all;
+}
+
 /*iphones 5 pra baixo da vida*/
 @media only screen and (max-width: 1280px) and (min-width:321px){
 
@@ -99,10 +125,27 @@ header.sesc{
     }
 
 }
-@media screen and (max-width:991px) {
+@media screen and (max-width:994px) {
+    .titulo-conteudo{
+        position: relative ;
+        top: unset;
+    }
 
+    .bto-navegacao{
+        margin-bottom: 10px;
+    }
 
 }
+
+@media screen and (max-width:450px){
+    .intro h2 {
+        font-size: 36px;
+        display: block;
+        line-height: 120%;
+    }
+}
+
+
 @media screen and (max-width:320px) {
     
     header.sesc {
