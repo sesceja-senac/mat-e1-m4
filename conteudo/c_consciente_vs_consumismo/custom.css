@@ -6,6 +6,11 @@ header.sesc{
     z-index: 10000;
 }
 
+figcaption {
+    text-align: center;
+    margin: 10px auto 20px auto;
+}
+
 .titulo-conteudo {
     position: absolute;
     top: 128px;
