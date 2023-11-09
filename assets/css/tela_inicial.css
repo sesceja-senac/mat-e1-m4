@@ -10,6 +10,20 @@
     }
 } */
 
+body {
+    background: url('../tela_inicial/bg-capa.png') no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+  
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
 .sr-only{
     position: absolute!important;
     width: 1px!important;
@@ -26,8 +40,8 @@
     width: 236px;
     height: 226px;
     position: absolute;
-    bottom: 5%;
-    left: 70%;
+    top: 10%;
+    left: 50%;
     border: none;
     background-size: 90%;
     display: block;
@@ -51,55 +65,69 @@
     margin-bottom: 20px;
     padding: 15px;
 }
-
 .btnFechar{
     color: #fff;
     clear: both;
 }
 
+.div-geral{
+    width: 1100px;
+    height: 100%;
+    position: relative;
+    margin: auto;
+}
 
-#bt_ini:hover{
+.img-capa{
+    position: absolute;
+    right: 0;
+    width: 720px;
+    height: 520px;
+    top: 50%;
+    margin-top: -220px;
+}
+
+.div-conteudo{
+    position: absolute;
+    width: 380px;
+    height: 210px;
+    left: 40px;
+    top: 50%;
+    margin-top: -140px;
+}
+.texto-capa{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.btn-iniciar{
+    display: block;
+    background-color: #c78023;
+    color: #000;
+    font-size: 28px;
+    font-weight: bold;
+    width: 140px;
+    height: 55px;
+    border: #fff solid 2px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    padding-top: 4px;
+    transition: all 0.2s;
+}
+.btn-iniciar:hover{
     transform: scale(1.1);
+    color: #fff;
 }
 
+#titulo-area{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    max-width: 400px;
+}
 
-#tituloarea{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    max-width: 200px;
-}
-#bg_centro{
-    position: absolute;
-    width: 103%;
-    left: -19px;
-    bottom: 0;
-}
-#bg_inferior{
-    position: absolute;
-    bottom: 0;
-}
-#bt_ini{
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-}
-#garota{
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
-    width: 32%;
-}
-#tituloNuvem{
-    width: 50%;
-    position: absolute;
-    right: 5%;
-}
-#nuvensPensamento{
-    position: absolute;
-    left: 30%;
-    top: 30%;
-}
 #videoplay{
     width: 200px;
     position: absolute;
@@ -108,6 +136,7 @@
 }
 #logo{
     position: absolute;
+    top: 10px;
     right: 10px;
     width: 100px;
 }
@@ -134,30 +163,7 @@
     display: block;
     background-position: center;
 }
-#link-1 {
-    background-image: url('../../tela_inicial/bt_1.png');
-}
-#link-2 {
-    background-image: url('../tela_inicial/bt_2.png');
-}
-#link-3 {
-    background-image: url('../tela_inicial/bt_3.png');
-}
-#link-4 {
-    background-image: url('../tela_inicial/bt_4.png');
-}
-#link-1:hover {
-    background-image: url('../tela_inicial/bt_1_hover.png');
-}
-#link-2:hover {
-    background-image: url('../tela_inicial/bt_2_hover.png');
-}
-#link-3:hover {
-    background-image: url('../tela_inicial/bt_3_hover.png');
-}
-#link-4:hover {
-    background-image: url('../tela_inicial/bt_4_hover.png');
-}
+
 
 /* Modal vídeo */
 .backdrop {
@@ -227,38 +233,6 @@
 .img-play {
     height: 100px;
     margin-left: 22px;    
-}
-
-
-#nuvemTitMobile{
-    width: 100%;
-    margin-top: 100px;
-    margin-left: 15px;
-}
-
-#garotaMobile{
-    position: absolute;
-    width: 70%;
-    margin-top: 80px;
-    z-index: 4;
-}
-#bg_inferiorMobile{
-    position: absolute;
-    bottom: 0;
-    width: 180%;
-    z-index: 3;
-}
-#nuvemPensamentoMobile{
-    position: absolute;
-    width: 30%;
-    margin-left: 120px;
-}
-
-#btIniciarMobile{
-position: absolute;
-width: 40%;
-margin-left: 60%;
-margin-top: 20%;
 }
 
 #logoMobile{
@@ -351,9 +325,9 @@ margin-top: 20%;
         padding: 15px;
     } */
     
-.modal-video .wrapper {
-    margin-top: -120px;
-}
+    .modal-video .wrapper {
+        margin-top: -120px;
+    }
     .modal-video p{
         width: 300px;
     }
@@ -390,54 +364,72 @@ margin-top: 20%;
         background-size: 100% 80%;
     }
 }
-    @media screen and (max-width:480px){
-    .desktop1{display: none;}
-    .btVideo {width: 30% !important;
-    bottom: unset;
-    top:70% !important;
-    margin-left: unset !important;}
-}
-@media screen and (min-width:483px){
-    .mobile1{display: none;}
-}
 
 @media screen and (max-width:1030px){
-.modal-dialog .modal-content{
-    background-size: 30%;
-    background-position: center;
-    background: unset;
-    max-width: 100%;
-    padding: 50px;
-    background: #007981;
-}
-.btVideo {margin-left: 40px;}
-#garota{width: 35%;}
-}
-
-@media screen and (max-width:780px){
-#nuvensPensamento{width: 15%;
-margin-top: 31px;
-left: 35%;}
-#garota{width: 50% !important; }
-#tituloNuvem{margin-top: 30px;}
-#bt_ini{top:45%;
-margin-left: 40px;}
-.btVideo {width: 25%;
-margin-left: -55px;}
+    .modal-dialog .modal-content{
+        background-size: 30%;
+        background-position: center;
+        background: unset;
+        max-width: 100%;
+        padding: 50px;
+        background: #007981;
+    }
+    .btVideo {margin-left: 40px;}
+    #garota{width: 35%;}
 }
 
-@media screen and (max-width:416px){
-    #garotaMobile{width: 60% !important;
-    margin-left: 10px !important;
-    margin-top: 65px !important;
-    position:fixed !important;}
-    #bg_inferiorMobile{
-        bottom: 0;
-        position: fixed;
-    } 
-    #nuvemTitMobile{margin-top: 60px;}
-    .btVideo{margin-top: 28px;
-    position: fixed;}
+@media screen and (max-width:820px){
+    .div-geral{
+        width: 100%;
+    }
+    .img-capa{
+        top: unset;
+        margin-top: unset;
+        bottom: 5%;
+    }
+    #logo{
+        top: 20px;
+        right: 20px;
+        width: 150px;
+    }
+
+    .div-conteudo {
+        position: absolute;
+        width: 380px;
+        height: 210px;
+        left: 40px;
+        top: 22%;
+        margin-top: unset;
+    }
+
+    .btVideo {
+        width: 30%;
+        top: 20%;
+        margin-left: 120px;
+    }
+}
+
+@media screen and (max-width:480px){
+    #titulo-area{
+        left: 10px;
+        top: 10%;
+    }
+    .div-conteudo{
+        left: 20px;
+    }
+    .img-capa{
+        display: none;
+    }
+    .btVideo{
+        position: absolute;
+        top: unset;
+        bottom: 5%;
+        left: 50%;
+        width: 236px;
+        margin: unset;
+        margin-left: -118px;
+        display: block;
+    }
 }
 
 @media screen and (max-width:376px){
