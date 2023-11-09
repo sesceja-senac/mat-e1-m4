@@ -1,0 +1,448 @@
+/* @keyframes BackgroundAnim {
+    0%{
+        background-image: url('../../tela_inicial/background.png');
+    }
+    50%{
+        background-image: url('../tela_inicial/background-noite.jpg');
+    }
+    100%{
+        background-image: url('../tela_inicial/background.png');
+    }
+} */
+
+.sr-only{
+    position: absolute!important;
+    width: 1px!important;
+    height: 1px!important;
+    padding: 0!important;
+    margin: -1px!important;
+    overflow: hidden!important;
+    clip: rect(0,0,0,0)!important;
+    white-space: nowrap!important;
+    border: 0!important;
+}
+.btVideo{
+    background: url('../../assets/img/Video_apresentacao_pq_layout.png') no-repeat;
+    width: 236px;
+    height: 226px;
+    position: absolute;
+    bottom: 5%;
+    left: 70%;
+    border: none;
+    background-size: 90%;
+    display: block;
+    margin: 10px auto;
+    transition: all 0.2s;
+}
+.btVideo:hover {
+    transform: scale(1.1);
+}
+.modal-dialog .modal-content{
+    background: url('../../assets/img/video_bg.png') no-repeat center;
+    width: 1133px;
+    height: 708px;
+    border: none;
+    padding: 100px 200px;
+    background-size: 85%;
+}
+.modal-dialog .modal-content p{
+    color: #fff;
+    clear: both;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.btnFechar{
+    color: #fff;
+    clear: both;
+}
+
+
+#bt_ini:hover{
+    transform: scale(1.1);
+}
+
+
+#tituloarea{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    max-width: 200px;
+}
+#bg_centro{
+    position: absolute;
+    width: 103%;
+    left: -19px;
+    bottom: 0;
+}
+#bg_inferior{
+    position: absolute;
+    bottom: 0;
+}
+#bt_ini{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+}
+#garota{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    width: 32%;
+}
+#tituloNuvem{
+    width: 50%;
+    position: absolute;
+    right: 5%;
+}
+#nuvensPensamento{
+    position: absolute;
+    left: 30%;
+    top: 30%;
+}
+#videoplay{
+    width: 200px;
+    position: absolute;
+    bottom: 5%;
+    left: 70%;
+}
+#logo{
+    position: absolute;
+    right: 10px;
+    width: 100px;
+}
+#wrapper {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../tela_inicial/bg_fundo.svg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+    animation: BackgroundAnim 9s infinite;
+}
+.menu {
+    position: absolute;
+    bottom: 85px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.menu a {
+    width: 382px;
+    height: 273px;
+    display: block;
+    background-position: center;
+}
+#link-1 {
+    background-image: url('../../tela_inicial/bt_1.png');
+}
+#link-2 {
+    background-image: url('../tela_inicial/bt_2.png');
+}
+#link-3 {
+    background-image: url('../tela_inicial/bt_3.png');
+}
+#link-4 {
+    background-image: url('../tela_inicial/bt_4.png');
+}
+#link-1:hover {
+    background-image: url('../tela_inicial/bt_1_hover.png');
+}
+#link-2:hover {
+    background-image: url('../tela_inicial/bt_2_hover.png');
+}
+#link-3:hover {
+    background-image: url('../tela_inicial/bt_3_hover.png');
+}
+#link-4:hover {
+    background-image: url('../tela_inicial/bt_4_hover.png');
+}
+
+/* Modal vídeo */
+.backdrop {
+    position: absolute;
+    z-index: 99;
+    height: 100vh;
+    width: 100vw;
+    background-color: #33333395;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .modal-video {
+    width: 1100px;
+    height: 650px;
+    background-image: url('../../tela_inicial/Video-apresentacao-gd.png');
+    background-position-x: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 100px;
+    padding-left: 210px;
+    color: white;
+} */
+
+.ytb {
+    width: 560px;
+    height: 315px;
+    display: block;
+    margin: 15px;
+}
+
+.fechar {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    display: block;
+    float: right;
+    margin-right: 320px;
+    padding: 5px 15px;
+}
+
+.fechar:hover {
+    background-color: white;
+    color: #007981;
+}
+
+.btn-video {
+    width: 227px;
+    height: 227px;
+    background-image: url('../tela_inicial/Video-apresentacao-pq.png');
+    padding-left: 28px;
+    padding-top: 25px;
+    color: white;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    z-index: 89;
+}
+.btn-video:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+.img-play {
+    height: 100px;
+    margin-left: 22px;    
+}
+
+
+#nuvemTitMobile{
+    width: 100%;
+    margin-top: 100px;
+    margin-left: 15px;
+}
+
+#garotaMobile{
+    position: absolute;
+    width: 70%;
+    margin-top: 80px;
+    z-index: 4;
+}
+#bg_inferiorMobile{
+    position: absolute;
+    bottom: 0;
+    width: 180%;
+    z-index: 3;
+}
+#nuvemPensamentoMobile{
+    position: absolute;
+    width: 30%;
+    margin-left: 120px;
+}
+
+#btIniciarMobile{
+position: absolute;
+width: 40%;
+margin-left: 60%;
+margin-top: 20%;
+}
+
+#logoMobile{
+    position: absolute;
+    right: 10px;
+    width: 20%;
+}
+.backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 51, 51, .7);
+ 
+}
+
+.modal-video {
+    background-image: url('../tela_inicial/video_bg.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 754px;
+    height: 572px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-video .wrapper {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    /* margin-left: -60px;
+    margin-top: -82px; */
+}
+.modal-video iframe {
+    box-shadow: 2px 2px 2px #333;
+    height: 280px;
+    width: 460px;
+    margin: 10px auto;
+    display: block;
+}
+.modal-video p {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: white;
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+}
+#fechar-video {
+    font-family: 'Poppins', Arial, sans-serif;
+    position: absolute;
+    right: 40px;
+    top: -40px;
+    border: none;
+    height: 30px;
+    width: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 4px;
+    background-color: #5ea6a6;
+    border: 1px solid #498080;
+    cursor: pointer;
+}
+#fechar-video:hover {
+    box-shadow: 2px 2px 2px #333;
+}
+
+@media (max-width: 900px) {
+    .menu {
+        width: 100%;
+        display: grid;
+    }
+    .menu a {
+        width: 382px;
+        height: 200px;
+    }
+   
+    /* .menu{
+        bottom: 210px;
+    } */
+}
+
+@media (max-width: 700px) {
+    /* .modal-video {
+        width: 95%;
+        margin: 5px;
+        background-image: unset;
+        background-color: #007981;
+        height: auto;
+        padding: 15px;
+    } */
+    
+.modal-video .wrapper {
+    margin-top: -120px;
+}
+    .modal-video p{
+        width: 300px;
+    }
+    /* .modal-video .wrapper{
+            margin-left: -160px;
+        } */
+    .ytb {
+        height: 200px !important;
+        width: 300px !important;
+        
+        margin: 5px;
+        width: 95%;
+    }
+    /* .btn-video {
+        top: 830px;
+        background-image: unset;
+        background-color: #007981;
+        height: auto;
+        padding: 15px 25px;
+        box-shadow: 3px 3px 6px #333;
+        border-radius: 5px;
+        text-align: center;
+    } */
+    .img-play {
+        display: none;
+    }
+}
+
+@media screen and (max-width:550px){
+    .modal-video .wrapper {
+        margin-top: -160px;
+    }
+    .modal-video{
+        background-size: 100% 80%;
+    }
+}
+    @media screen and (max-width:480px){
+    .desktop1{display: none;}
+    .btVideo {width: 30% !important;
+    bottom: unset;
+    top:70% !important;
+    margin-left: unset !important;}
+}
+@media screen and (min-width:483px){
+    .mobile1{display: none;}
+}
+
+@media screen and (max-width:1030px){
+.modal-dialog .modal-content{
+    background-size: 30%;
+    background-position: center;
+    background: unset;
+    max-width: 100%;
+    padding: 50px;
+    background: #007981;
+}
+.btVideo {margin-left: 40px;}
+#garota{width: 35%;}
+}
+
+@media screen and (max-width:780px){
+#nuvensPensamento{width: 15%;
+margin-top: 31px;
+left: 35%;}
+#garota{width: 50% !important; }
+#tituloNuvem{margin-top: 30px;}
+#bt_ini{top:45%;
+margin-left: 40px;}
+.btVideo {width: 25%;
+margin-left: -55px;}
+}
+
+@media screen and (max-width:416px){
+    #garotaMobile{width: 60% !important;
+    margin-left: 10px !important;
+    margin-top: 65px !important;
+    position:fixed !important;}
+    #bg_inferiorMobile{
+        bottom: 0;
+        position: fixed;
+    } 
+    #nuvemTitMobile{margin-top: 60px;}
+    .btVideo{margin-top: 28px;
+    position: fixed;}
+}
+
+@media screen and (max-width:376px){
+    #garotaMobile{margin-top: 155px !important;
+    width: 70% !important;}
+    #nuvemPensamentoMobile{margin-top: 28px !important;}
+    #btIniciarMobile{margin-top: 130px;}
+}

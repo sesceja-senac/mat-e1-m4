@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap CSS v5.0.2 -->      
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/fa/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/preloader.css">
+    <link rel="stylesheet" href="assets/css/tela_inicial.css">
+    <title>História dos números</title>
+</head>
+<body>
+    <div class="preloader">
+        <div class="anim"></div>
+        <h1>Aguarde enquanto o conteúdo é carregado.</h1>
+    </div>
+    <div id="wrapper">
+        <!-- <div class="btn-video">
+            Assista novamente ao<br> vídeo introdutório
+            <img class="img-play"  src="../../assets/tela_inicial/bt_video.svg" alt="">
+        </div> -->
+        <div class="desktop1">
+        <img src="assets/tela_inicial/Area.svg" id="tituloarea" alt="">
+        <img src="assets/tela_inicial/bg_centro.svg" id="bg_centro" alt="">
+        <img src="assets/tela_inicial/bg_inferior.svg" id="bg_inferior" alt="">
+        <a href="conteudo/01_historia_numeros/index.html?page=1">
+            
+        <img src="assets/tela_inicial/bt_iniciar.png" id="bt_ini" alt="">
+        </a>
+        <img src="assets/tela_inicial/garota.png" id="garota" alt="">
+        <img src="assets/tela_inicial/titulo.png" id="tituloNuvem" alt="">
+        <img src="assets/tela_inicial/nuvens.png" id="nuvensPensamento" alt="">
+        
+        <img src="assets/tela_inicial/logo.svg" id="logo" alt="">
+        <div class="div-btVideo" >   
+            <button type="button" class="btVideo" data-bs-toggle="modal" data-bs-target="#modal-video" aria-hidden="true"></button>
+            
+        </div>
+        <p class="sr-only">Olá, estudante do Sesc EAD EJA! </p>
+        <p class="sr-only">  Seja bem-vindo à área de matemática e suas tecnologias. Confira o que você aprenderá neste módulo. </p>
+        <p class="sr-only">  Encontrados em nosso documento de identificação, em nosso endereço profissional, em nossas contas, entre outros, os números representam quantidades, medidas, códigos e ordens. </p>
+        <p class="sr-only">  Neste módulo, vamos estudar como os números nos acompanham há mais de 30 mil anos e como eles nos ajudam a organizar a nossa vida.  </p>
+        <p class="sr-only">  Siga conosco nesta caminhada. Até a próxima
+        </p>
+        
+        </div>
+        <div class="mobile1">
+            <img src="assets/tela_inicial/Area.svg" id="tituloarea" alt="">
+            <img src="assets/tela_inicial/logo.svg" id="logoMobile" alt="">
+            <img src="assets/tela_inicial/bg_inferior.svg" id="bg_inferiorMobile" alt="">
+            <img src="assets/tela_inicial/titulo.png" id="nuvemTitMobile"> 
+            <div class="row">
+              <div class="col-sm-4 col-xs-4">
+                <img src="assets/tela_inicial/garota.png" id="garotaMobile">
+              </div>
+              <div class="col-sm-4 col-xs-4">
+                <img src="assets/tela_inicial/nuvens.png" id="nuvemPensamentoMobile">
+              </div>
+              <div class="col-sm-4 col-xs-3">
+                <a href="conteudo/01_historia_numeros/index.html?page=1">
+                <img src="assets/tela_inicial/bt_iniciar.png" id="btIniciarMobile" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="botao-video" aria-hidden="true">   
+                <button type="button" class="btVideo" aria-hidden="true"></button>
+            </div>
+
+        </div>
+
+
+        
+        
+        <!-- <div class="modal fade" id="modal-video" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-fullscreen-md-down">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close float-end btnFechar" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <p>Olá! Antes de começar, assista ao vídeo introdutório sobre o módulo a seguir:</p>
+                        
+                        <iframe width="560" height="315" class="ratio ratio-4x3"  src="https://www.youtube.com/embed/JheP5gzH9-w?si=Kr2v-HOuk-B1QiTe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="backdrop">
+          <div class="modal-video">
+              <div class="wrapper">
+                  <button id="fechar-video">X</button>
+                  <p>Olá! Antes de começar, assista ao vídeo introdutório sobre o módulo a seguir:</p>
+                  
+                  <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/DF_KQv0tF4o?si=uEamsCEIqLjA3cGc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                  <iframe src="https://www.youtube.com/embed/JheP5gzH9-w?si=Kr2v-HOuk-B1QiTe" class="ytb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  
+              </div>
+          </div>
+      </div>
+
+        <!-- <div class="menu">
+            <a id="link-1" class="animate__animated animate__backInRight" href="conteudo/index.html?page=1"></a>
+            <a id="link-2" class="animate__animated animate__backInRight animate__delay-1s" href="conteudo/index.html?page=2"></a>
+            <a id="link-3" class="animate__animated animate__backInRight animate__delay-2s" href="conteudo/index.html?page=3"></a>
+            <a id="link-4" class="animate__animated animate__backInRight animate__delay-3s" href="conteudo/index.html?page=4"></a>
+        </div> -->
+    </div>
+   
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+    <!--Jquery-->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/geral.js"></script>
+    <script src="assets/js/tela_inicial.js"></script>
+
+<!-- Versao atual do handtalk -->
+<script>
+    var scriptElem = document.createElement("script");
+    (scriptElem.src =
+      "https://plugin.handtalk.me/web/latest/handtalk.min.js"),
+      (scriptElem.charset = "UTF-8"),
+      (scriptElem.onload = function () {
+        window.ht = new HT({
+          token: "bf5b7efb148a829a126a0e0c9fd533bf",
+          align: "top",
+          videoEnabled: true,
+          ytEmbedReplace: true,
+          mobileConfig: {
+            align: "right",
+            actionsAlign: "top",
+            customButtonStyle: {
+              borderRadius: "6px",
+              size: "38px",
+              horizontalMargin: "13px",
+              bottomMargin: "140px",
+              rightMargin: "40px",
+            },
+          },
+        });
+        $(".ht-skip").attr("aria-hidden", "true");
+      }),
+      document.body.appendChild(scriptElem);
+  </script>
+</body>
+
+</html>
