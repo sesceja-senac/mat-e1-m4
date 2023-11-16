@@ -722,25 +722,23 @@ footer {
 .bto-modal {
   border: 0px none;
   background: none;
-  width: 205px;
-  height: 144px;
-  display: block;;
+  width: 196px;
+  height: 140px;
+  display: block;
   text-align: center;
-  margin: auto;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin: 30px auto;
 }
 .bto-modal1 {
-  background: url(../imgAjuste/versionamento/bot1.png) top left / 100% auto no-repeat;
+  background: url(../imgAjuste/versionamento/grandezas_bt1.png) top left / 100% auto no-repeat;
 }
 .bto-modal2 {
-  background: url(../imgAjuste/versionamento/bot2.png) top left / 100% auto no-repeat;
+  background: url(../imgAjuste/versionamento/grandezas_bt2.png) top left / 100% auto no-repeat;
 }
 .bto-modal1:hover {
-  background: url(../imgAjuste/versionamento/bot1_hover.png) top left / 100% auto no-repeat;
+  background: url(../imgAjuste/versionamento/grandezas_bt1_hv.png) top left / 100% auto no-repeat;
 }
 .bto-modal2:hover {
-  background: url(../imgAjuste/versionamento/bot2_hover.png) top left / 100% auto no-repeat;
+  background: url(../imgAjuste/versionamento/grandezas_bt2_hv.png) top left / 100% auto no-repeat;
 }
 
 .painel-gaitinha .accordion-button {
@@ -812,6 +810,19 @@ figure img{
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.titulo-podcast{
+  text-align: center;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: -20px;
+}
+
+.img-formula19{
+  width: 250px;
+  margin: 40px auto;
+}
+
 
 @media (max-width: 1080px) {
   video {
