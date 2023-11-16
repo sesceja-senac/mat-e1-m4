@@ -901,3 +901,7 @@ iframe, iframe.youtube-pl{
 .formulas{
   text-align: center;
 }
+
+.referencias p {
+  word-wrap: break-word;
+}
