@@ -619,6 +619,9 @@ footer {
   word-wrap: break-word;
 }
 
+.mg-fig{
+  margin: 40px auto;
+}
 
 
 /*--------- BGs laterais ---------*/
