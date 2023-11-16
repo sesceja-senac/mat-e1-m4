@@ -19,13 +19,13 @@ jQuery("document").ready(function($){
   //alert('Página: '+pg_number);
 
   if(pg_number == 1){
-    document.body.style.backgroundImage = "url('assets/imgAjuste/versionamento/bg_laranja.png'), linear-gradient(#EAC18F, #D3974F)";
+    document.body.style.backgroundImage = "url('assets/imgAjuste/versionamento/bg_html1.png')";
   }else if(pg_number == 2){
-    document.body.style.backgroundImage = "url('assets/imgAjuste/versionamento/bg_verde.png'), linear-gradient(#7DDFE2, #004F53)";
+    document.body.style.backgroundImage = "url('assets/imgAjuste/versionamento/bg_html2.png')";
   }else if(pg_number == 3){
-    document.body.style.backgroundImage = "url('assets/imgAjuste/versionamento/bg_laranja.png'), linear-gradient(#D3974F, #EAC18F)";
+    document.body.style.backgroundImage = "url('assets/imgAjuste/versionamento/bg_html3.png')";
   }else if(pg_number == 4){
-    document.body.style.backgroundImage = "url('assets/imgAjuste/versionamento/bg_verde.png'), linear-gradient(#004F53, #7DDFE2)";
+    document.body.style.backgroundImage = "url('assets/imgAjuste/versionamento/bg_ref.png')";
   }
 
 });
