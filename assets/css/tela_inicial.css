@@ -412,7 +412,7 @@ body {
 @media screen and (max-width:480px){
     #titulo-area{
         left: 10px;
-        top: 10%;
+        top: 14%;
     }
     .div-conteudo{
         left: 20px;
@@ -430,6 +430,15 @@ body {
         margin-left: -118px;
         display: block;
     }
+    #logo {
+        top: 20px;
+        right: 20px;
+        width: 150px;
+        scale: 0.5;
+    }
+    .texto-capa {margin-top: 15%;}
+    .btn-iniciar {margin-left: 25%;}
+ 
 }
 
 @media screen and (max-width:376px){

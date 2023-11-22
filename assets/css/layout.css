@@ -226,11 +226,11 @@ a.btn-sesc {
   background-attachment: fixed;
 }
 
-header.sesc {
-  background-image: url(../img/cabecalho/cabecalho.png);
-  background-position: center center;
+header.sesc{
+  background-image: url(../../../../assets/img/cabecalho/cabecalho.png);
+  background-position: center center;   
   background-size: cover;
-  height: 65px;
+  height: 65px;    
 }
 
 #topo span {
