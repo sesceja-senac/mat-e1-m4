@@ -322,7 +322,7 @@ figure .img-fluid {
   color: #FFF;
 }
 
-.caixa ul, .caixa p {
+.caixa ul, .caixa p, .modal-header *{
   color: #FFF !important;
 }
 
