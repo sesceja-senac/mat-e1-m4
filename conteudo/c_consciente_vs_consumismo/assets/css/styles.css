@@ -2,7 +2,77 @@ body {
   background-repeat: no-repeat !important;
   background-size: cover !important;
   background-position: center !important;
+  background-attachment: fixed !important;
 }
+
+/*---------- TESTE DE BG COM GRADIENTE ----------*/
+.bg-gradiente{
+  background-color: #684293;
+}
+.cor-rosa{
+  width: 1000px;
+  height: 1000px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: radial-gradient(farthest-corner at 40px 40px, #C489BB 0%, transparent 60%);
+  z-index: 0;
+}
+.cor-azul{
+  width: 1000px;
+  height: 1000px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-image: radial-gradient(farthest-corner at 1000px 1000px, #45B4E8 0%, transparent 60%);
+  z-index: 0;
+}
+.cor-verde{
+  width: 1000px;
+  height: 1000px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-image: radial-gradient(farthest-corner at 200px 1000px, #BFE2DF 0%, transparent 50%);
+  z-index: 0;
+}
+.layer-preta{
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #000;
+  opacity: 0.6;
+  transition: all 0.8s;
+}
+
+/*----- Botão bg claro/escuro -----*/
+.btn-background{
+  width: 42px;
+  height: 42px;
+  position: fixed;
+  z-index: 90;
+  border-radius: 5px;
+  left: 80px;
+  top: 15px;
+  box-shadow: 4px 4px 0px rgba(187, 187, 187, 0.8);
+  cursor: pointer;
+  transition: all 0.4s;
+  background: url('../imgAjuste/versionamento/dia-e-noite.png') no-repeat, linear-gradient(90deg, #fce797 50%, #474747 50%);
+  background-position: center;
+  background-size: 100%;
+  
+}
+.btn-background:hover{
+  transform: scale(1.1);
+}
+/*----- Botão bg claro/escuro -----*/
+
+/*---------- /TESTE DE BG COM GRADIENTE ----------*/
+
 
 header .container {
   border-radius: 25px 25px 0px 0px;
@@ -12,6 +82,7 @@ header .container {
   padding: 4px 40px;
   border-radius: 0px 0px 25px 25px;
   position: relative;
+  z-index: 5;
 }
 
 figcaption {
@@ -251,8 +322,12 @@ figure .img-fluid {
   color: #FFF;
 }
 
-.caixa ul {
-  color: white;
+.caixa ul, .caixa p {
+  color: #FFF !important;
+}
+
+.painel-gaitinha p{
+  color: #000 !important;
 }
 
 h2 {
@@ -598,6 +673,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  z-index: 6;
 }
 
 .container.referencias {
@@ -872,6 +948,8 @@ figure img {
 .cabecalho {
   background-color: #00828a;
   display: block;
+  position: relative;
+  z-index: 10;
 }
 
 .cabecalho img {
