@@ -326,7 +326,7 @@ figure .img-fluid {
   color: #FFF !important;
 }
 
-.painel-gaitinha p{
+.painel-gaitinha p, .modal-body p{
   color: #000 !important;
 }
 
