@@ -3,12 +3,21 @@ body {
   background-size: cover !important;
   background-position: center !important;
   background-attachment: fixed !important;
+  height: auto;
+  overflow-x: hidden;
 }
 
 /*---------- TESTE DE BG COM GRADIENTE ----------*/
 .bg-gradiente{
   background-color: #684293;
+  background-image: radial-gradient(farthest-corner at 5% 5%, #C489BB 0%, transparent 60%), 
+  radial-gradient(farthest-corner at 100% 100%, #45B4E8 0%, transparent 60%); 
+  /* radial-gradient(farthest-corner at 0% 100%, #BFE2DF 0%, transparent 50%); */
+  /* backdrop-filter: brightness(0.5); */
+  /* background-blend-mode: difference; */
 }
+
+/*
 .cor-rosa{
   width: 1000px;
   height: 1000px;
@@ -36,6 +45,7 @@ body {
   background-image: radial-gradient(farthest-corner at 200px 1000px, #BFE2DF 0%, transparent 50%);
   z-index: 0;
 }
+
 .layer-preta{
   width: 100%;
   height: 100%;
@@ -48,6 +58,7 @@ body {
   opacity: 0.6;
   transition: all 0.8s;
 }
+*/
 
 /*----- Botão bg claro/escuro -----*/
 .btn-background{

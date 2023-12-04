@@ -19,8 +19,8 @@ jQuery("document").ready(function($){
   //alert('Página: '+pg_number);
 
   if(pg_number == 1){
-    //document.body.style.backgroundImage = "url('assets/imgAjuste/versionamento/bg_html1.png')";
-    $("body").addClass("bg-gradiente");
+    document.body.style.backgroundImage = "url('assets/imgAjuste/versionamento/bg_html1.png')";
+    //$("body").addClass("bg-gradiente");
   }else if(pg_number == 2){
     document.body.style.backgroundImage = "url('assets/imgAjuste/versionamento/bg_html2.png')";
   }else if(pg_number == 3){
