@@ -232,7 +232,7 @@
               devemos dividir a outra por três, e assim sucessivamente.</p>
           </div>
           <p>Agora que já estudamos sobre grandezas, vamos classificá-las corretamente.<span class="no-print"> Para
-              isso, clique ou toque nos botões a seguir.</span></p>
+              isso, clique ou toque no botão abaixo para acessar o conteúdo.</span></p>
 
           <!--ESPERA ODA-->
           <div class="sr-only print">
@@ -263,7 +263,19 @@
             </p>
           </div>
 
-          <video class="no-print"></video>
+          <style>
+            .bto-objeto img {transition: 0.25s; max-width: 350px; margin-bottom: 20px; margin-top: 20px; border: 5px solid white; border-radius: 10px; box-shadow: 10px 10px 0px #0000007c}
+            .bto-objeto:hover img {
+              transition: 0.25s;
+              transform: scale(1.05);
+            }
+          </style>
+<p class="text-center">
+          <a href="objeto/calculo_velocidade/index.html" target="_blank" class="bto-objeto">
+              <img src="objeto/calculo_velocidade/thumb.png" class="img-fluid" alt="">                
+          </a>
+        </p>
+       
           <div class="sr-only print">
             <!--
             <h5>Corrida </h5>
@@ -742,7 +754,43 @@
             analisar um problema envolvendo o consumo de energia de lâmpadas em um contexto prático.</p>
 
           <!--ESPERA ODA-->
-          <video class="no-print"></video>
+          
+
+<div class="container">
+  <div class="fundo">
+    <div class="section-hq" id="page-1">
+      <img src="objeto/economia_de_luz/assets/img/Quadros_1_Colorido.jpg" class="img-fluid" alt="História em quadrinho">
+      <a href="#page-2" class="seta som-clique" id="seta1">
+        <div class="material-symbols-outlined">
+          <p class="fonte proximo">Próximo
+            <i class="fas fa-arrow-down"></i>
+          </p>
+        </div>
+      </a>
+    </div>
+
+    <div class="section-hq esconde" id="page-2">
+      <img src="objeto/economia_de_luz/assets/img/Quadros_2_Colorido.jpg" class="img-fluid" alt="História em quadrinho">
+      <a href="#page-3" class="seta som-clique" id="seta2">
+        <div class="material-symbols-outlined">
+          <p class="fonte proximo">Próximo
+            <i class="fas fa-arrow-down"></i>
+          </p>
+        </div>
+      </a>
+    </div>
+
+    <div class="section-hq esconde" id="page-3">
+      <img src="objeto/economia_de_luz/assets/img/Quadros_3_Colorido.jpg" class="img-fluid" alt="História em quadrinho">
+    </div>
+  </div>
+</div>
+
+
+<div>
+  <audio id="somBotao" src="objeto/economia_de_luz/assets/audio/clique.mp3" preload="auto"></audio>
+</div>
+</p>
 
           <p>Em problemas como esses, podemos utilizar uma estratégia de cálculo conhecida como <b>regra de três</b>.
             Você lembra o que é a regra de três e como utilizá-la?</p>
@@ -2643,8 +2691,32 @@
       }),
       document.body.appendChild(scriptElem);
   </script>
+<!-- Scripts do objeto HQ - economia-de-luz -->
+<script>
+  $(document).ready(function () {
 
+audioClick();
 
+$(function () {
+  $(".section-hq:not(:first)").hide();
+
+  $(".seta").click(function () {
+    let destino_id = $(this).attr("href");
+
+    $(this).closest(".seta").hide();
+    $(destino_id).show();
+
+  });
+});
+
+});
+
+function audioClick() {
+$('.som-clique').on('click', function () {
+  $('#somBotao')[0].play();
+});
+}
+</script>
 </body>
 
 </html>
