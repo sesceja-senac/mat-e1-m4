@@ -14,36 +14,62 @@
 <body>
 
   <div class="conteudo">
-    <div>
-      <img src="assets/img/bg-inicial-preto.jpg" class="img-fluid position-relative" alt="cenário antigo">
-      <button type="button" class="position-absolute btn-ampliar som-clique exibir">
-        <i class="material-symbols-outlined">
-          visibility
-        </i><br>
-        Exibir
+
+    <div class="img-pbs">
+      <img src="assets/img/Fabrica_PeB.png" alt="Fabrica colorida"
+        class="img-fluid position-absolute w-100 top-0 left-0 nao-clicavel" id="pb-btn-tres">
+
+      <button type="button" class="btn som-clique position-absolute" id="conteudo-03" data-bs-toggle="modal"
+        data-bs-target="#conteudoTres">
+        <img src="assets/img/Fabrica_Colorido.png" alt="Fabrica colorida" class="img-fluid d-none selecao"
+          id="hover-btn-tres">
       </button>
-      <button type="button" class="btn som-clique position-absolute btn-ampliar btnFullScreen">
-        <i class="material-symbols-outlined">
-          fullscreen_exit
-        </i>
-        FullScreen
-      </button>
+
+      <img src="assets/img/bg-inicial-preto.png" class="img-fluid position-absolute w-100 top-0 left-0 nao-clicavel"
+        alt="cenário preto e branco antigo">
+
       <button type="button" class="btn som-clique position-absolute" id="conteudo-01" data-bs-toggle="modal" data-bs-target="#conteudoUm">
         <img src="assets/img/Restaurante_Colorido.png" alt="Restaurante" class="img-fluid d-none selecao" id="hover-btn-um">
       </button>
+
+      <img src="assets/img/Coredora_PeB.png" alt="Mulher correndo" class="img-fluid position-absolute left-0 nao-clicavel" id="pb-btn-dois">
+
+      <img src="assets/img/Predio_PeB.png" alt="Prédio" class="img-fluid position-absolute nao-clicavel" id="pb-btn-seis">
+
       <button type="button" class="btn som-clique position-absolute" id="conteudo-02" data-bs-toggle="modal" data-bs-target="#conteudoDois">
         <img src="assets/img/Corredora_Colorido.png" alt="Mulher correndo" class="img-fluid d-none selecao" id="hover-btn-dois">
       </button>
-      <button type="button" class="btn som-clique position-absolute" id="conteudo-03" data-bs-toggle="modal" data-bs-target="#conteudoTres">
-        <img src="assets/img/Fabrica_Colorido.png" alt="Fabrica colorida" class="img-fluid d-none selecao" id="hover-btn-tres">
-      </button>
+
+      <img src="assets/img/Construacao_PeB.png" alt="construção" class="img-fluid position-absolute nao-clicavel" id="pb-btn-quatro">
+
       <button type="button" class="btn som-clique position-absolute" id="conteudo-04" data-bs-toggle="modal" data-bs-target="#conteudoQuatro">
-        <img src="assets/img/Construção_Colorido.png" alt="construção" class="img-fluid d-none selecao" id="hover-btn-quatro">
+        <img src="assets/img/Construcao_Colorido.png" alt="construção" class="img-fluid d-none selecao" id="hover-btn-quatro">
       </button>
+
+      <img src="assets/img/arvore.png" alt="Restaurante" class="img-fluid position-absolute w-100 top-0 left-0 nao-clicavel" id="pb-btn-um">
+      
+      <img src="assets/img/Carro_PeB.png" alt="Carro" class="img-fluid position-absolute w-100 top-0 left-0 nao-clicavel" id="pb-btn-cinco">
+
       <button type="button" class="btn som-clique position-absolute" id="conteudo-05" data-bs-toggle="modal" data-bs-target="#conteudoCinco">
         <img src="assets/img/Caros_colorido.png" alt="Carro" class="img-fluid d-none selecao" id="hover-btn-cinco">
       </button>
+
     </div>
+
+    <button type="button" class="position-absolute btn-ampliar som-clique exibir">
+      <i class="material-symbols-outlined">
+        visibility
+      </i><br>
+      Exibir
+    </button>
+    <button type="button" class="btn som-clique position-absolute btn-ampliar btnFullScreen">
+      <i class="material-symbols-outlined">
+        fullscreen_exit
+      </i>
+      FullScreen
+    </button>
+
+
 
 
   </div>
@@ -55,15 +81,15 @@
       <div class="modal-content">
         <div class="modal-header header-um">
           <h1 class="modal-title fs-5" id="conteudoUmLabel">Restaurante</h1>
+          <button type="button" class="position-absolute btn-ampliar som-clique controle-som" id="music1">
+            <i class="material-icons">
+              volume_up
+            </i><br>
+            Volume
+          </button>
           <button type="button" class="btn-close som-clique" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body row">
-          <!-- <button type="button" class="position-absolute btn-ampliar som-clique controle-som meuBotao">
-        <i class="material-icons">
-          volume_up
-        </i><br>
-        Volume
-      </button> -->
           <img src="assets/img/Restaurante_Colorido.png" alt="Mulher correndo" class="img-fluid">
           <p>Ao cozinhar seguindo uma receita, os ingredientes propostos são distribuídos para que o prato fique de um
             determinado tamanho. Caso você deseje dobrar o tamanho, precisa dobrar a quantidade de ingredientes. Já para
@@ -85,15 +111,15 @@
       <div class="modal-content">
         <div class="modal-header header-dois">
           <h1 class="modal-title fs-5" id="conteudoDoisLabel">Corrida</h1>
+          <button type="button" class="position-absolute btn-ampliar som-clique controle-som" id="music2">
+            <i class="material-icons">
+              volume_up
+            </i><br>
+            Volume
+          </button>
           <button type="button" class="btn-close som-clique" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body row">
-          <!-- <button type="button" class="position-absolute btn-ampliar som-clique controle-som meuBotao">
-        <i class="material-icons">
-          volume_up
-        </i><br>
-        Volume
-      </button> -->
           <div class="col-9">
             <p>Quando treinamos para participar de uma prova de corrida, podemos melhorar nosso desempenho ajustando a
               velocidade para alcançar a linha de chegada no menor tempo possível. <br> <br> Se um jovem corre a uma
@@ -118,15 +144,15 @@
       <div class="modal-content">
         <div class="modal-header header-tres">
           <h1 class="modal-title fs-5" id="conteudoTresLabel">Linha de produção de fábrica</h1>
+          <button type="button" class="position-absolute btn-ampliar som-clique controle-som" id="music3">
+            <i class="material-icons">
+              volume_up
+            </i><br>
+            Volume
+          </button>
           <button type="button" class="som-clique btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <!-- <button type="button" class="position-absolute btn-ampliar som-clique controle-som meuBotao">
-        <i class="material-icons">
-          volume_up
-        </i><br>
-        Volume
-      </button> -->
           <p>Em uma linha de produção de uma fábrica, é enviado um pedido fechado de <strong>500 peças</strong> por dia,
             que são distribuídas para <strong>50 trabalhadores</strong>. Dessa forma, cada um terá de produzir
             <strong>10 peças</strong>.</p>
@@ -151,15 +177,15 @@
       <div class="modal-content">
         <div class="modal-header header-quatro">
           <h1 class="modal-title fs-5" id="conteudoQuatroLabel">Construção de casa</h1>
+          <button type="button" class="position-absolute btn-ampliar som-clique controle-som" id="music4">
+            <i class="material-icons">
+              volume_up
+            </i><br>
+            Volume
+          </button>
           <button type="button" class="som-clique btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body row">
-          <!-- <button type="button" class="position-absolute btn-ampliar som-clique controle-som meuBotao">
-        <i class="material-icons">
-          volume_up
-        </i><br>
-        Volume
-      </button> -->
           <div class="col-4">
             <p>Para construir uma casa, precisamos de um determinado número de trabalhadores. </p>
           </div>
@@ -188,15 +214,15 @@
       <div class="modal-content">
         <div class="modal-header header-cinco">
           <h1 class="modal-title fs-5" id="conteudoCincoLabel">Viagem de férias</h1>
+          <button type="button" class="position-absolute btn-ampliar som-clique controle-som" id="music5">
+            <i class="material-icons">
+              volume_up
+            </i><br>
+            Volume
+          </button>
           <button type="button" class="som-clique btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body row">
-          <!-- <button type="button" class="position-absolute btn-ampliar som-clique controle-som meuBotao">
-        <i class="material-icons">
-          volume_up
-        </i><br>
-        Volume
-      </button> -->
           <div class="col-7"><img src="assets/img/Caros_colorido.png" alt="Carros" class="img-fluid"></div>
           <div class="col-5"><br><br>
             <p>Quando decidimos fazer uma viagem de férias, precisamos calcular quanto tempo vamos levar para chegar ao
@@ -219,6 +245,26 @@
 
   <div class="colecao-audios">
     <audio id="somBotao" src="assets/audio/clique.mp3" preload="auto"></audio>
+    <audio id="musica1">
+      <source src="assets/audio/Botao3-Restaurante.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="musica2">
+      <source src="assets/audio/Botao1-Corrida.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="musica3">
+      <source src="assets/audio/Botao5-fabrica.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="musica4">
+      <source src="assets/audio/Botao4-Construcao.mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="musica5">
+      <source src="assets/audio/Botao2-Viagem.mp3" type="audio/mp3">
+    </audio>
+
   </div>
 
   <!-- força o usuário a virar a tela do celular -->
@@ -264,7 +310,9 @@
   <script>
     window.addEventListener("load", AOS.refresh);
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"> </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   <script src="assets/js/script.js"></script>

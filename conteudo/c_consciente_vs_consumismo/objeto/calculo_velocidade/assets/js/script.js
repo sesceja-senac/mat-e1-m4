@@ -44,20 +44,79 @@ $(document).ready(function () {
         });
     }
 
-    // function controlarMusica(musica, botao) {
-    //     var icone = botao.find('i');
+    function reproduzirAudioAoAbrirModal(modalId, musicaId) {
+        var modal = $('#' + modalId);
+        var musica = $('#' + musicaId)[0];
 
-    //     if (icone.text() === 'volume_off') {
-    //         pausarTodasMusicas();
-    //         icone.text('volume_up');
-    //         musica.volume = 0.1;
-    //         musica.play();
-    //     } else {
-    //         icone.text('volume_off');
-    //         musica.pause();
-    //         musica.currentTime = 0;
-    //     }
-    // }
+        modal.on('shown.bs.modal', function () {
+            if (musica && typeof musica.play === 'function') {
+                musica.volume = 0.1;
+                musica.play();
+            }
+        });
+
+        modal.on('hidden.bs.modal', function () {
+            if (musica && typeof musica.pause === 'function') {
+                musica.pause();
+            }
+        });
+    }
+
+    reproduzirAudioAoAbrirModal('conteudoUm', 'musica1');
+    reproduzirAudioAoAbrirModal('conteudoDois', 'musica2');
+    reproduzirAudioAoAbrirModal('conteudoTres', 'musica3');
+    reproduzirAudioAoAbrirModal('conteudoQuatro', 'musica4');
+    reproduzirAudioAoAbrirModal('conteudoCinco', 'musica5');
+
+    $('#music1').click(function () {
+        controlarMusica(musica1, $(this));
+    });
+
+    $('#music2').click(function () {
+        controlarMusica(musica2, $(this));
+    });
+
+    $('#music3').click(function () {
+        controlarMusica(musica3, $(this));
+    });
+
+    $('#music4').click(function () {
+        controlarMusica(musica4, $(this));
+    });
+
+    $('#music5').click(function () {
+        controlarMusica(musica5, $(this));
+    });
+
+    function controlarMusica(musica, botao) {
+        var icone = botao.find('i');
+
+        if (icone.text() === 'volume_off') {
+            pausarTodasMusicas();
+            icone.text('volume_up');
+            musica.volume = 0.1;
+            musica.play();
+        } else {
+            icone.text('volume_off');
+            musica.pause();
+            musica.currentTime = 0;
+        }
+    }
+
+    function pausarTodasMusicas() {
+        $('.controle-som i').text('volume_off');
+        musica1.pause();
+        musica1.currentTime = 0;
+        musica2.pause();
+        musica2.currentTime = 0;
+        musica3.pause();
+        musica3.currentTime = 0;
+        musica4.pause();
+        musica4.currentTime = 0;
+        musica5.pause();
+        musica5.currentTime = 0;
+
+    }
 
     function telaCheia() {
         $('.btnFullScreen').on('click', toggleFullScreen);
