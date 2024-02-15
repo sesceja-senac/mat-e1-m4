@@ -61,7 +61,11 @@
     height: 126px;
     left: -70px;
 }
-
+.icone.voce-lembra::before{
+    background-image: url(../img/ico_vocelembra.png);
+    width: 89px;
+    height: 102px;
+}
 
 @media print{
     .icone::before{
